@@ -1,0 +1,5 @@
+package com.deviro.colours.services.impl;
+
+public class ColourPrinterImpl {
+
+}

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="AuthorDaoImplIntegrationTest" project="jdbctemplate" tests="3" started="3" failures="0" errors="1" ignored="0">
+  <testsuite name="com.devtiro.jdbctemplate.AuthorDaoImplIntegrationTest" time="2.369" displayname="AuthorDaoImplIntegrationTest" uniqueid="[engine:junit-jupiter]/[class:com.devtiro.jdbctemplate.AuthorDaoImplIntegrationTest]">
+    <testcase name="testThatAuthorCanBeUpdated" classname="com.devtiro.jdbctemplate.AuthorDaoImplIntegrationTest" time="1.246" displayname="testThatAuthorCanBeUpdated()" uniqueid="[engine:junit-jupiter]/[class:com.devtiro.jdbctemplate.AuthorDaoImplIntegrationTest]/[method:testThatAuthorCanBeUpdated()]">
+      <error>org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [UPDATE authors SET id = ?, name = ?, age = ?, WHERE id = ?]&#13;
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:103)&#13;
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)&#13;
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1572)&#13;
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:667)&#13;
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:960)&#13;
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1015)&#13;
+	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:1025)&#13;
+	at com.devtiro.jdbctemplate.dao.impl.AuthorDaoImpl.update(AuthorDaoImpl.java:66)&#13;
+	at com.devtiro.jdbctemplate.AuthorDaoImplIntegrationTest.testThatAuthorCanBeUpdated(AuthorDaoImplIntegrationTest.java:61)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)&#13;
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)&#13;
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)&#13;
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)&#13;
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:727)&#13;
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)&#13;
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)&#13;
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)&#13;
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)&#13;
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)&#13;
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)&#13;
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)&#13;
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)&#13;
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)&#13;
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)&#13;
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)&#13;
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)&#13;
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)&#13;
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:217)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:213)&#13;
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:138)&#13;
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:68)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)&#13;
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)&#13;
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)&#13;
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)&#13;
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)&#13;
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)&#13;
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)&#13;
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)&#13;
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)&#13;
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)&#13;
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:147)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:127)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:90)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:55)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:102)&#13;
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:54)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:95)&#13;
+	at org.junit.platform.launcher.core.DefaultLauncherSession$DelegatingLauncher.execute(DefaultLauncherSession.java:91)&#13;
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:60)&#13;
+	at org.eclipse.jdt.internal.junit5.runner.JUnit5TestReference.run(JUnit5TestReference.java:98)&#13;
+	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:529)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:756)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:452)&#13;
+	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)&#13;
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "UPDATE authors SET id = ?, name = ?, age = ?, [*]WHERE id = ?"; expected "identifier"; SQL statement:
+UPDATE authors SET id = ?, name = ?, age = ?, WHERE id = ? [42001-214]&#13;
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:502)&#13;
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:477)&#13;
+	at org.h2.message.DbException.getSyntaxError(DbException.java:261)&#13;
+	at org.h2.command.Parser.readIdentifier(Parser.java:5656)&#13;
+	at org.h2.command.Parser.readTableColumn(Parser.java:1080)&#13;
+	at org.h2.command.Parser.readUpdateSetClause(Parser.java:1151)&#13;
+	at org.h2.command.Parser.parseUpdate(Parser.java:1120)&#13;
+	at org.h2.command.Parser.parsePrepared(Parser.java:858)&#13;
+	at org.h2.command.Parser.parse(Parser.java:689)&#13;
+	at org.h2.command.Parser.parse(Parser.java:661)&#13;
+	at org.h2.command.Parser.prepareCommand(Parser.java:569)&#13;
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:631)&#13;
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:554)&#13;
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1116)&#13;
+	at org.h2.jdbc.JdbcPreparedStatement.&lt;init&gt;(JdbcPreparedStatement.java:92)&#13;
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:288)&#13;
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:327)&#13;
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)&#13;
+	at org.springframework.jdbc.core.JdbcTemplate$SimplePreparedStatementCreator.createPreparedStatement(JdbcTemplate.java:1671)&#13;
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:646)&#13;
+	... 75 more&#13;
+&#13;
+</error>
+    </testcase>
+    <testcase name="testThatMultipleAuthorsCanBeCreatedAndRecalled" classname="com.devtiro.jdbctemplate.AuthorDaoImplIntegrationTest" time="0.115" displayname="testThatMultipleAuthorsCanBeCreatedAndRecalled()" uniqueid="[engine:junit-jupiter]/[class:com.devtiro.jdbctemplate.AuthorDaoImplIntegrationTest]/[method:testThatMultipleAuthorsCanBeCreatedAndRecalled()]"/>
+    <testcase name="testThatAuthorCanbeCreatedAndrecalled" classname="com.devtiro.jdbctemplate.AuthorDaoImplIntegrationTest" time="0.027" displayname="testThatAuthorCanbeCreatedAndrecalled()" uniqueid="[engine:junit-jupiter]/[class:com.devtiro.jdbctemplate.AuthorDaoImplIntegrationTest]/[method:testThatAuthorCanbeCreatedAndrecalled()]"/>
+  </testsuite>
+</testrun>

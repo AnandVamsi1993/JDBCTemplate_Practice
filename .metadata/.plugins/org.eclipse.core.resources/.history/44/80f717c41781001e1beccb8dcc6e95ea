@@ -1,0 +1,26 @@
+package com.devtiro.jdbctemplate;
+
+import com.devtiro.jdbctemplate.domain.Author;
+import com.devtiro.jdbctemplate.domain.Book;
+
+public final class TestDataUtil {
+	
+	private TestDataUtil() {};
+
+	public static Author createTestAuthor() {
+		return Author.builder()
+				.id(1L)
+				.name("Abigail Rose")
+				.age(80)
+				.build();
+	}
+	
+	public static Book createTestBook() {
+		return Book.builder()
+				.isbn("9876-187659")
+				.title("The shadow in the attic")
+				.author_id(1L)
+				.build();
+	}
+
+}

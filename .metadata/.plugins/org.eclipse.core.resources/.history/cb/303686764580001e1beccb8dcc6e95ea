@@ -1,0 +1,7 @@
+package com.devtiro.jdbctemplate.dao.impl;
+
+import com.devtiro.jdbctemplate.dao.BookDao;
+
+public class BookDaoImpl implements BookDao {
+
+}

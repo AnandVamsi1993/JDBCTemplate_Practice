@@ -1,0 +1,3 @@
+INDEX VERSION 1.134+C:\Users\PC\Desktop\Java_Telusko\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+4237426717.index

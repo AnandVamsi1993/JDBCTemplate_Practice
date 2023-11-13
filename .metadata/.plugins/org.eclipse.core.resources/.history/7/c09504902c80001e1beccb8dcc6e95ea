@@ -1,0 +1,5 @@
+INSERT INTO widgets (name,purpose) VALUES
+("WIDGET A", "Used for testing purposes"),
+("WIDGET B", "Used for productivity purposes"),
+("WIDGET B", "Used for outdoor purposes"),
+("WIDGET B", "Improves overall well being");

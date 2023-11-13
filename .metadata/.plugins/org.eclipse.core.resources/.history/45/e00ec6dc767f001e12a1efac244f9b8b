@@ -1,0 +1,5 @@
+package com.deviro.configuration.config;
+
+public class PizzaConfig {
+
+}

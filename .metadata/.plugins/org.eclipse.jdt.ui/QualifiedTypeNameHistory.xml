@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="lombok.extern.slf4j.Slf4j"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="com.deviro.colours.services.impl.EnglishBluePrinter"/>
+    <fullyQualifiedTypeName name="com.deviro.colours.services.impl.EnglishRedPrinter"/>
+    <fullyQualifiedTypeName name="com.deviro.colours.services.impl.EnglishGreenPrinter"/>
+    <fullyQualifiedTypeName name="com.deviro.colours.ColoursApplication"/>
+    <fullyQualifiedTypeName name="com.deviro.colours.services.ColourPrinter"/>
+    <fullyQualifiedTypeName name="com.deviro.colours.services.impl.ColourPrinterImpl"/>
+    <fullyQualifiedTypeName name="com.deviro.colours.services.RedPrinter"/>
+    <fullyQualifiedTypeName name="com.deviro.colours.services.GreenPrinter"/>
+    <fullyQualifiedTypeName name="com.deviro.colours.services.BluePrinter"/>
+    <fullyQualifiedTypeName name="com.deviro.colours.services.impl.SpanishBluePrinter"/>
+    <fullyQualifiedTypeName name="com.deviro.colours.services.impl.SpanishRedPrinter"/>
+    <fullyQualifiedTypeName name="com.deviro.colours.services.impl.SpanishGreenPrinter"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
+    <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
+    <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
+    <fullyQualifiedTypeName name="lombok.Data"/>
+    <fullyQualifiedTypeName name="com.deviro.configuration.PizzaApplication"/>
+    <fullyQualifiedTypeName name="com.deviro.configuration.config.PizzaConfig"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.context.properties.ConfigurationProperties"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="com.devtiro.database.DatabaseApplication"/>
+    <fullyQualifiedTypeName name="lombok.extern.java.Log"/>
+    <fullyQualifiedTypeName name="javax.sql.DataSource"/>
+    <fullyQualifiedTypeName name="com.devtiro.postgresdatabase.PostgresdatabaseApplication"/>
+    <fullyQualifiedTypeName name="org.springframework.boot.CommandLineRunner"/>
+    <fullyQualifiedTypeName name="org.springframework.jdbc.core.JdbcTemplate"/>
+</qualifiedTypeNameHistroy>

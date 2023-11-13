@@ -1,0 +1,5 @@
+package com.devtiro.jdbctemplate.dao.impl;
+
+public class BookDaoImpl {
+
+}

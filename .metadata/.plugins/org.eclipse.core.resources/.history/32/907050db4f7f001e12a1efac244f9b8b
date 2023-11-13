@@ -1,0 +1,41 @@
+package com.deviro.colours.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.deviro.colours.services.BluePrinter;
+import com.deviro.colours.services.ColourPrinter;
+import com.deviro.colours.services.GreenPrinter;
+import com.deviro.colours.services.RedPrinter;
+import com.deviro.colours.services.impl.ColourPrinterImpl;
+import com.deviro.colours.services.impl.EnglishBluePrinter;
+import com.deviro.colours.services.impl.EnglishGreenPrinter;
+import com.deviro.colours.services.impl.EnglishRedPrinter;
+import com.deviro.colours.services.impl.SpanishBluePrinter;
+import com.deviro.colours.services.impl.SpanishGreenPrinter;
+import com.deviro.colours.services.impl.SpanishRedPrinter;
+
+@Configuration
+public class PrinterConfig {
+
+	
+	@Bean
+	public BluePrinter bluePrinter() {
+		return new SpanishBluePrinter();
+	}
+	
+	@Bean
+	public RedPrinter englishRedPrinter() {
+		return new SpanishRedPrinter();
+	}
+	
+	@Bean
+	public GreenPrinter GreenPrinter() {
+		return new SpanishGreenPrinter();
+	}
+	
+	@Bean
+	public ColourPrinter colourPrinter(RedPrinter redPrinter, GreenPrinter greenPrinter, BluePrinter bluePrinter) {
+		return new ColourPrinterImpl(redPrinter, greenPrinter, bluePrinter);
+	}
+}

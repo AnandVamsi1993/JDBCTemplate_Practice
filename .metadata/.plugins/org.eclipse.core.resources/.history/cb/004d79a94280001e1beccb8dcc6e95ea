@@ -1,0 +1,5 @@
+package com.devtiro.jdbctemplate.config;
+
+public class DatabaseConfig {
+
+}
