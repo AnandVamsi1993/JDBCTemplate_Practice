@@ -12,3 +12,9 @@
 1699840015529	Move compilation unit
 1699900603386	Rename type 'AuthorDaoImplIntegrationTest'
 1699901524305	Rename compilation unit 'BookDaoImplIntegrationTest.java'
+1699933518968	Move compilation unit
+1699933523811	Move compilation unit
+1699978730852	Rename type 'Mapper'
+1699978787564	Rename type 'AuthorMapper'
+1699978802818	Move compilation unit
+1699979274268	Rename type 'BookMapper'

@@ -20,7 +20,22 @@ public class JacksonTests {
 				.yearPublished("2005")
 				.build();
 		String result = objectMapper.writeValueAsString(book);
-		assertThat(result).isEqualTo(result);
+		assertThat(result).isEqualTo( "{\"foo\":\"bar\",\"isbn\":\"987-654-321-0\",\"title\":\"The Enigma of Eternity\",\"author\":\"Aria"
+                + " Montgomery\",\"year\":\"2005\"}");
 	}
-
+	
+	@Test
+	public void testThatObjectMapperCanConvertJavaObjectFromJsonObject() throws JsonProcessingException {
+		Book book = Book.builder()
+				.isbn("987-654-321-0")
+				.title("The Enigma of Eternity")
+				.author("Aria Montgomery")
+				.yearPublished("2005")
+				.build();
+		String json =  "{\"isbn\":\"987-654-321-0\",\"title\":\"The Enigma of Eternity\",\"author\":\"Aria"
+                + " Montgomery\",\"year\":\"2005\"}";
+		ObjectMapper objectMapper = new ObjectMapper();
+		Book result = objectMapper.readValue(json, Book.class);
+		assertThat(result).isEqualTo(book);
+	}
 }

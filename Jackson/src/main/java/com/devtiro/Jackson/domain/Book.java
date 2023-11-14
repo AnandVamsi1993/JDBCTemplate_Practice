@@ -1,5 +1,8 @@
 package com.devtiro.Jackson.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -15,6 +18,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Book {
 	
 	private String isbn;
@@ -24,6 +28,7 @@ public class Book {
 //	@ManyToOne(cascade = CascadeType.ALL)
 //	@JoinColumn(name = "author_id")
 	String author;
+	@JsonProperty("year")
 	String yearPublished;
 
 }
