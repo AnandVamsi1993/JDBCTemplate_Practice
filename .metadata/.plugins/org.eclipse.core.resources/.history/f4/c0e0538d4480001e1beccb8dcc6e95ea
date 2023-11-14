@@ -1,5 +1,0 @@
-package com.devtiro.jdbctemplate.domain;
-
-public class Author {
-
-}

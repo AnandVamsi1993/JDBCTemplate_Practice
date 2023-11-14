@@ -1,5 +1,0 @@
-INSERT INTO widgets (name,purpose) VALUES
-(1, "WIDGET A", "Used for testing purposes"),
-(2, "WIDGET B", "Used for productivity purposes"),
-(3, "WIDGET B", "Used for outdoor purposes"),
-(4, "WIDGET B", "Improves overall well being");

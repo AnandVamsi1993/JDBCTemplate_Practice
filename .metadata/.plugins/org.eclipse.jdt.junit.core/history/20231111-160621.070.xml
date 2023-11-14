@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testrun name="AuthorDaoImplTest" project="jdbctemplate" tests="1" started="1" failures="0" errors="0" ignored="0">
-  <testsuite name="com.devtiro.jdbctemplate.dao.AuthorDaoImplTest" time="1.661" displayname="AuthorDaoImplTest" uniqueid="[engine:junit-jupiter]/[class:com.devtiro.jdbctemplate.dao.AuthorDaoImplTest]">
-    <testcase name="testThatCreateAuthorGeneratesCorrctSql" classname="com.devtiro.jdbctemplate.dao.AuthorDaoImplTest" time="1.661" displayname="testThatCreateAuthorGeneratesCorrctSql()" uniqueid="[engine:junit-jupiter]/[class:com.devtiro.jdbctemplate.dao.AuthorDaoImplTest]/[method:testThatCreateAuthorGeneratesCorrctSql()]"/>
-  </testsuite>
-</testrun>

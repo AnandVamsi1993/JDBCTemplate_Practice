@@ -3,3 +3,12 @@
 1699750348790	Move compilation unit
 1699762765304	Extract method 'createTestBook'
 1699762996564	Move method 'createTestBook'
+1699839864157	Delete element
+1699839922968	Delete element
+1699839939234	Delete element
+1699839948073	Delete element
+1699839983574	Delete element
+1699840011369	Move compilation unit
+1699840015529	Move compilation unit
+1699900603386	Rename type 'AuthorDaoImplIntegrationTest'
+1699901524305	Rename compilation unit 'BookDaoImplIntegrationTest.java'

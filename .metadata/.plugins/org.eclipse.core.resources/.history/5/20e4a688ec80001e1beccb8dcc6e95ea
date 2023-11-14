@@ -1,8 +1,0 @@
-package com.devtiro.jdbctemplate.dao;
-
-import com.devtiro.jdbctemplate.domain.Book;
-
-public interface BookDao {
-
-	public void create(Book book);
-}

@@ -1,7 +1,0 @@
-package com.devtiro.jdbctemplate.dao.impl;
-
-import com.devtiro.jdbctemplate.dao.AuthorDao;
-
-public class AuthorDaoImpl implements AuthorDao {
-
-}
