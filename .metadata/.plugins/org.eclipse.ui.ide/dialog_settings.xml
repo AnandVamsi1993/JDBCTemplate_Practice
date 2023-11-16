@@ -19,6 +19,7 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\PC\Desktop\Java_Telusko\Jackson"/>
 			<item value="C:\Users\PC\Desktop\Java_Telusko\jdbctemplate_Jpa"/>
 			<item value="C:\Users\PC\Desktop\Java_Telusko\jdbctemplate"/>
 			<item value="C:\Users\PC\Desktop\Java_Telusko\postgresdatabase"/>
